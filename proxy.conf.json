@@ -1,0 +1,6 @@
+{
+  "/": {
+    "target": "https://fun-fact.herokuapp.com/",
+    "secure": false
+  }
+}

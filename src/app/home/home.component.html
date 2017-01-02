@@ -1,0 +1,21 @@
+<h3>
+  {{randomFact.title}}
+</h3>
+<div >
+  <img *ngIf="!voted" class="fact-image-big" [src]='randomFact.img' (error)='standby($event)'>
+  <div *ngIf="voted" class="knowledgeBar">
+    <knowledge-pie-chart
+      [countYes]="randomFact.knowledgeCount.yes"
+      [countNo]="randomFact.knowledgeCount.no">
+    </knowledge-pie-chart>
+  </div>
+  <div *ngIf="!voted" class="knowledgeButtons">
+    <button id="yes-button" class="btn" (click)="onYesClick()">Yes!</button>
+    <button id="no-button" class="btn" (click)="onNoClick()">No!</button>
+  </div>
+  <div *ngIf="voted" class="new-fact-button">
+    <button id="new-random-fact-button" class="btn" (click)="loadNewRandomFact()">Random Fact!</button>
+    <button id="more-facts-button" class="btn" (click)="showAllFacts()">Show All Facts</button>
+  </div>
+
+</div>

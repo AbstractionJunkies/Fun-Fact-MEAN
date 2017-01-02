@@ -1,0 +1,58 @@
+.fact {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.fact img {
+  width: 100%;
+}
+
+.fact h2 {
+  color: dodgerblue;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.fact h2:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.fact-info {
+  text-align: center;
+  margin: 10px;
+  height: 75px;
+}
+
+.social-share-buttons {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+}
+
+.info-icons {
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+}
+.info-icons span{
+}
+
+.sb-container h3 {
+  margin: 0;
+}
+
+.sb-buttons {
+  margin: 0 !important;
+}
+
+.sb-title {
+  font-size: 16px;
+  color: #555555;
+  border-bottom: 1px solid lightgray;
+
+}

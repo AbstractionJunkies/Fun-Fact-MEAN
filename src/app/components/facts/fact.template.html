@@ -1,0 +1,30 @@
+<div class="fact">
+  <h2 class="clickable" (click)="goToDetail(id)">{{title}}</h2>
+  <img class="fact-image-small" [src]='img' (error)='standby($event)'>
+  <div class="fact-info">
+    <div class="social-share-buttons">
+      <share-buttons [shareTitle]="'Share with friends'"
+                     [url]="'https://fun-fact.herokuapp.com/facts/fact/' + id"
+                     [count]="false"
+                     [totalCount]="false"
+                     [pinterest]="false"
+                     [linkedIn]="false"
+                     [google]="false"
+                     [tumblr]="false"
+                     [reddit]="false"
+                     [stumbleUpOn]="false"
+      ></share-buttons>
+    </div>
+    <div class="info-icons">
+      <div>
+        <span> {{uploader}}</span><span class="glyphicon glyphicon-user"></span>
+      </div>
+      <div>
+        <span> {{commentsCount}}</span> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+      </div>
+      <div>
+        <span> {{category}}</span><span class="glyphicon glyphicon-tag"></span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <form [formGroup]="userSettingsToUpdate" #userSettingsForm="ngForm" class="container text-center" (ngSubmit)="updateSettings(); userSettingsForm.reset()">
+        <div class="form-group">
+            <label for="newPassword">Enter new password</label>
+            <input name="newPassword" type="password" class="form-control" formControlName="newPassword">
+            <span class="text-danger" *ngIf="!userSettingsToUpdate.controls['newPassword'].valid && userSettingsToUpdate.controls['newPassword'].touched">Password too short</span>
+        </div>
+        <div class="form-group">
+            <label for="email">Enter new Email</label>
+            <input id="email" name="email" type="email" class="form-control" formControlName="email">
+        </div>
+        <div class="form-group" [ngClass]="{'has-error':!userSettingsToUpdate.controls['currentPassword'].valid}">
+            <label for="currentPassword">Enter your current password</label>
+            <input name="currentPassword" type="password" class="form-control" formControlName="currentPassword">
+            <span class="text-danger" *ngIf="!userSettingsToUpdate.controls['currentPassword'].valid && userSettingsToUpdate.controls['currentPassword'].touched">Please enter your password in order to change your user setting</span>
+        </div>
+        <button class="btn">Update user info</button>
+
+    </form>
+    <simple-notifications [options]="notificationOptions "></simple-notifications>
+</div>
