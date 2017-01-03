@@ -7,7 +7,8 @@ const cors = require('cors');
 
 module.exports = (config, app) => {
     // server cliend folder bower etc...
-    app.use('static', express.static(config.rootPath + 'public'));
+    app.use('/static', express.static(config.rootPath + 'public'));
+    app.use(express.static(config.rootPath + 'public/images'));
     app.use(express.static(config.rootPath + 'public/dist'));
 
     app.use(cookieParser());
