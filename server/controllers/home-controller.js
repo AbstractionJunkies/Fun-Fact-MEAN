@@ -8,6 +8,9 @@ module.exports = function ({data}) {
                     let randomFact = result[Math.floor(Math.random() * Object.keys(result).length)];
                     res.status(200).json(randomFact);
                 });
+        },
+        homepage(req,res){
+            res.sendFile('index.html');
         }
     };
 };

@@ -8,7 +8,7 @@ import { AdminService } from '../admin.service';
 })
 export class ManageUsersComponent implements OnInit {
   public usersInfo: [{}];
-  private imgUrl: string = 'https://fun-fact.herokuapp.com/static/images/user-аvatar-images/';
+  private imgUrl: string = 'http://localhost:1337/static/images/user-аvatar-images/';
 
   constructor(private _adminService: AdminService) { }
 

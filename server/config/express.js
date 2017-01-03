@@ -7,8 +7,8 @@ const cors = require('cors');
 
 module.exports = (config, app) => {
     // server cliend folder bower etc...
-    app.use('/static', express.static(config.rootPath + '/public'));
-    app.use('/static', express.static(config.rootPath + '/public/dist'));
+    app.use('static', express.static(config.rootPath + 'public'));
+    app.use(express.static(config.rootPath + 'public/dist'));
 
     app.use(cookieParser());
     app.use(session({
@@ -24,7 +24,7 @@ module.exports = (config, app) => {
         res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         res.setHeader('Access-Control-Allow-Credentials', true);
-        
+
         next();
     });
 

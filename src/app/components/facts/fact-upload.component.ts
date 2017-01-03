@@ -11,7 +11,7 @@ export class FactUploadComponent implements OnInit {
   public imgPrev: string;
 
   private options: any = {
-    url: 'https://fun-fact.herokuapp.com/facts/upload',
+    url: 'http://localhost:1337/facts/upload',
     data: {
       username: '',
       title: '',
@@ -35,7 +35,7 @@ export class FactUploadComponent implements OnInit {
     }
     this.events.emit('startUpload');
     //TODO: CHange url here when deploying
-    window.location.href = 'https://fun-fact.herokuapp.com/#/facts/all';
+    window.location.href = 'http://localhost:1337/#/facts/all';
   }
 
   ngOnInit(): void {
