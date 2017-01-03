@@ -1734,9 +1734,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var RegisterUrl = 'http://localhost:1337/api/auth/register';
-var LoginUrl = 'http://localhost:1337/api/auth/login';
-var GetLoggedUserUrl = 'http://localhost:1337/api/auth/getLoggedUser';
+var RegisterUrl = 'https://fun-fact.herokuapp.com/api/auth/register';
+var LoginUrl = 'https://fun-fact.herokuapp.com/api/auth/login';
+var GetLoggedUserUrl = 'https://fun-fact.herokuapp.com/api/auth/getLoggedUser';
 var AuthToken = 'auth_token';
 var AuthenticationService = (function () {
     function AuthenticationService(_http, _router) {
@@ -9199,7 +9199,7 @@ var UserService = (function () {
     function UserService(http, auth) {
         this.http = http;
         this.auth = auth;
-        this.host = 'http://localhost:1337/';
+        this.host = 'https://fun-fact.herokuapp.com/';
         this.avatarSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__["Subject"]();
     }
     UserService.prototype.getUserFavorites = function (username) {
@@ -20687,7 +20687,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HomeUrl = 'http://localhost:1337/';
+var HomeUrl = 'https://fun-fact.herokuapp.com/';
 var AdminService = (function () {
     function AdminService(_http, auth) {
         this._http = _http;
@@ -20823,7 +20823,7 @@ var FactService = (function () {
     function FactService(http, auth) {
         this.http = http;
         this.auth = auth;
-        this.host = 'http://localhost:1337/';
+        this.host = 'https://fun-fact.herokuapp.com/';
         this.commentSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__["Subject"]();
     }
     FactService.prototype.getAllFacts = function (page) {
@@ -45167,7 +45167,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ManageUsersComponent = (function () {
     function ManageUsersComponent(_adminService) {
         this._adminService = _adminService;
-        this.imgUrl = 'http://localhost:1337/static/images/user-аvatar-images/';
+        this.imgUrl = 'https://fun-fact.herokuapp.com/static/images/user-аvatar-images/';
     }
     ManageUsersComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -45239,9 +45239,9 @@ var AppComponent = (function () {
         this._authService = _authService;
         this._userService = _userService;
         this.router = router;
-        this.url = 'http://localhost:1337/api/home';
+        this.url = 'https://fun-fact.herokuapp.com/api/home';
         this.state = 'active';
-        this.imgUrl = 'http://localhost:1337/static/images/user-аvatar-images/';
+        this.imgUrl = 'https://fun-fact.herokuapp.com/static/images/user-аvatar-images/';
         this.userAvatar = '';
     }
     AppComponent.prototype.ngOnInit = function () {
@@ -45678,7 +45678,7 @@ var FactUploadComponent = (function () {
     function FactUploadComponent(_authService) {
         this._authService = _authService;
         this.options = {
-            url: 'http://localhost:1337/facts/upload',
+            url: 'https://fun-fact.herokuapp.com/facts/upload',
             data: {
                 username: '',
                 title: '',
@@ -45697,7 +45697,7 @@ var FactUploadComponent = (function () {
         }
         this.events.emit('startUpload');
         //TODO: CHange url here when deploying
-        window.location.href = 'http://localhost:1337/#/facts/all';
+        window.location.href = 'https://fun-fact.herokuapp.com/#/facts/all';
     };
     FactUploadComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -45884,7 +45884,7 @@ var HomeComponent = (function () {
         this.voted = false;
     };
     HomeComponent.prototype.showAllFacts = function () {
-        window.location.href = "http://localhost:1337//#/facts/all";
+        window.location.href = "https://fun-fact.herokuapp.com//#/facts/all";
     };
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -45920,7 +45920,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HomeUrl = 'http://localhost:1337/';
+var HomeUrl = 'https://fun-fact.herokuapp.com/';
 var HomeComponentService = (function () {
     function HomeComponentService(_http, auth) {
         this._http = _http;
@@ -45981,7 +45981,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var homePageUrl = 'http://localhost:1337/#/home';
+var homePageUrl = 'https://fun-fact.herokuapp.com/#/home';
 var PageNotFoundComponent = (function () {
     function PageNotFoundComponent() {
     }
@@ -61446,9 +61446,9 @@ var UserAvatarSettings = (function () {
         this.fb = fb;
         this.notification = notification;
         this.events = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.imgUrl = 'http://localhost:1337/static/images/user-аvatar-images/';
+        this.imgUrl = 'https://fun-fact.herokuapp.com/static/images/user-аvatar-images/';
         this.options = {
-            url: 'http://localhost:1337/api/users/user/avatar',
+            url: 'https://fun-fact.herokuapp.com/api/users/user/avatar',
             data: {
                 username: '',
             },
@@ -61536,7 +61536,7 @@ var UserSettingsComponent = (function () {
         this.fb = fb;
         this.notification = notification;
         this.events = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.imgUrl = 'http://localhost:1337/static/images/user-аvatar-images/';
+        this.imgUrl = 'https://fun-fact.herokuapp.com/static/images/user-аvatar-images/';
     }
     UserSettingsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -65682,19 +65682,19 @@ module.exports = "/*!\r\n *  Font Awesome 4.7.0 by @davegandy - http://fontaweso
 /* 732 */
 /***/ function(module, exports) {
 
-module.exports = "<section class=\"text-center\">\r\n  <h1>Delete facts</h1>\r\n  <table class=\"deleted-facts\">\r\n    <thead>\r\n      <tr>\r\n        <th>Fact ID</th>\r\n        <th>Fact Title</th>\r\n        <th>File Uploader</th>\r\n        <th>File Category </th>\r\n        <th>Restore?</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr *ngFor=\"let fact of deletedFacts\">\r\n        <td>{{fact._id}}</td>\r\n        <td>\r\n          <img src={{fact.img}} alt=\"\" class=\"deleted-img-thumbnail\">\r\n        </td>\r\n        <td>{{fact.title}}</td>\r\n        <td>{{fact.uploader}}</td>\r\n        <td>{{fact.category}}</td>\r\n        <td> <button class=\"btn btn-danger\" (click)=\"restoreImage(fact._id)\" [disabled]=\"!fact.isDeleted\"> Restore </button>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</section>\r\n<simple-notifications [options]=\"notificationOptions \"></simple-notifications>"
+module.exports = "<section class=\"text-center\">\n  <h1>Delete facts</h1>\n  <table class=\"deleted-facts\">\n    <thead>\n      <tr>\n        <th>Fact ID</th>\n        <th>Fact Title</th>\n        <th>File Uploader</th>\n        <th>File Category </th>\n        <th>Restore?</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let fact of deletedFacts\">\n        <td>{{fact._id}}</td>\n        <td>\n          <img src={{fact.img}} alt=\"\" class=\"deleted-img-thumbnail\">\n        </td>\n        <td>{{fact.title}}</td>\n        <td>{{fact.uploader}}</td>\n        <td>{{fact.category}}</td>\n        <td> <button class=\"btn btn-danger\" (click)=\"restoreImage(fact._id)\" [disabled]=\"!fact.isDeleted\"> Restore </button>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n</section>\n<simple-notifications [options]=\"notificationOptions \"></simple-notifications>"
 
 /***/ },
 /* 733 */
 /***/ function(module, exports) {
 
-module.exports = "<table>\r\n  <thead>\r\n    <tr>\r\n      <th>Avatar</th>\r\n      <th>Username</th>\r\n      <th>Email</th>\r\n      <th>BlockUser</th>\r\n      <th>MakeAdmin</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let user of usersInfo\">\r\n      <td>\r\n        <img src=\"http://localhost:1337/static/images/user-аvatar-images/{{user.avatar}}\" alt=\"\" class=\"user-avatar-admin-page\">\r\n      </td>\r\n      <td>{{user.username}}</td>\r\n      <td>{{user.email}}</td>\r\n      <td>\r\n        <button *ngIf=\"!user.isBlocked\" class=\"btn btn-danger\" (click)='toggleBlocUser(user._id)'>Block user</button>\r\n        <button *ngIf=\"user.isBlocked\" class=\"btn btn-danger\" (click)='toggleBlocUser(user._id)'>Unblock user</button>\r\n      </td>\r\n      <td>\r\n        <button class=\"btn btn-danger\" (click)='makeUserAdmin(user._id)'>Make Admin</button>\r\n      </td>\r\n    </tr>\r\n  </tbody>\r\n</table>"
+module.exports = "<table>\n  <thead>\n    <tr>\n      <th>Avatar</th>\n      <th>Username</th>\n      <th>Email</th>\n      <th>BlockUser</th>\n      <th>MakeAdmin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let user of usersInfo\">\n      <td>\n        <img src=\"https://fun-fact.herokuapp.com/static/images/user-аvatar-images/{{user.avatar}}\" alt=\"\" class=\"user-avatar-admin-page\">\n      </td>\n      <td>{{user.username}}</td>\n      <td>{{user.email}}</td>\n      <td>\n        <button *ngIf=\"!user.isBlocked\" class=\"btn btn-danger\" (click)='toggleBlocUser(user._id)'>Block user</button>\n        <button *ngIf=\"user.isBlocked\" class=\"btn btn-danger\" (click)='toggleBlocUser(user._id)'>Unblock user</button>\n      </td>\n      <td>\n        <button class=\"btn btn-danger\" (click)='makeUserAdmin(user._id)'>Make Admin</button>\n      </td>\n    </tr>\n  </tbody>\n</table>"
 
 /***/ },
 /* 734 */
 /***/ function(module, exports) {
 
-module.exports = "<header>\n  <nav class=\"navbar navbar-default navbar-responsive-collapse\">\n    <div class=\"navbar-container\">\n      <ul class=\"nav navbar-nav left\">\n        <li>\n          <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n        </li>\n        <li>\n          <a routerLink=\"/facts/all\" routerLinkActive=\"active\">All facts</a>\n        </li>\n        <li *ngIf=\"_authService.isLoggedIn() && _authService.isAdmin()\">\n          <a routerLink=\"/admin/users\" routerLinkActive=\"active\">Admin</a>\n        </li>\n        <li *ngIf=\"_authService.isLoggedIn() && _authService.isAdmin()\">\n          <a routerLink=\"/admin/facts/deleted\" routerLinkActive=\"active\">Deleted Facts</a>\n        </li>\n        <li *ngIf=\"_authService.isLoggedIn()\">\n          <a routerLink=\"/upload\" routerLinkActive=\"active\">Upload</a>\n        </li>\n      </ul>\n      <img id=\"logo\" src=\"https://s27.postimg.org/hz4mhhe4z/FunFactLogo.png\"/>\n      <ul class=\" nav navbar-nav right\">\n        <li *ngIf=\"!_authService.isLoggedIn()\">\n          <a routerLink=\"/register\" routerLinkActive=\"active\">Register</a>\n        </li>\n        <li *ngIf=\"!_authService.isLoggedIn()\">\n          <a routerLink=\"/login\" routerLinkActive=\"active\">Login</a>\n        </li>\n        <li *ngIf=\"_authService.isLoggedIn()\">\n          <img [src]=\"userAvatar\" (click)=\"redirectToUser()\">\n          <!--<a routerLink=\"/user\" routerLinkActive=\"active\">User</a>-->\n        </li>\n        <li *ngIf=\"_authService.isLoggedIn()\">\n          <a (click)=\"logout()\">Logout</a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n\n</header>\n<div id=\"content\" class=\"facts-container\">\n\n  <img id=\"header-image\" src=\"https://s27.postimg.org/havryjff7/HEADER_BACKGORUND.png\"/>\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<header>\r\n  <nav class=\"navbar navbar-default navbar-responsive-collapse\">\r\n    <div class=\"navbar-container\">\r\n      <ul class=\"nav navbar-nav left\">\r\n        <li>\r\n          <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n        </li>\r\n        <li>\r\n          <a routerLink=\"/facts/all\" routerLinkActive=\"active\">All facts</a>\r\n        </li>\r\n        <li *ngIf=\"_authService.isLoggedIn() && _authService.isAdmin()\">\r\n          <a routerLink=\"/admin/users\" routerLinkActive=\"active\">Admin</a>\r\n        </li>\r\n        <li *ngIf=\"_authService.isLoggedIn() && _authService.isAdmin()\">\r\n          <a routerLink=\"/admin/facts/deleted\" routerLinkActive=\"active\">Deleted Facts</a>\r\n        </li>\r\n        <li *ngIf=\"_authService.isLoggedIn()\">\r\n          <a routerLink=\"/upload\" routerLinkActive=\"active\">Upload</a>\r\n        </li>\r\n      </ul>\r\n      <img id=\"logo\" src=\"https://s27.postimg.org/hz4mhhe4z/FunFactLogo.png\"/>\r\n      <ul class=\" nav navbar-nav right\">\r\n        <li *ngIf=\"!_authService.isLoggedIn()\">\r\n          <a routerLink=\"/register\" routerLinkActive=\"active\">Register</a>\r\n        </li>\r\n        <li *ngIf=\"!_authService.isLoggedIn()\">\r\n          <a routerLink=\"/login\" routerLinkActive=\"active\">Login</a>\r\n        </li>\r\n        <li *ngIf=\"_authService.isLoggedIn()\">\r\n          <img [src]=\"userAvatar\" (click)=\"redirectToUser()\">\r\n          <!--<a routerLink=\"/user\" routerLinkActive=\"active\">User</a>-->\r\n        </li>\r\n        <li *ngIf=\"_authService.isLoggedIn()\">\r\n          <a (click)=\"logout()\">Logout</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n\r\n</header>\r\n<div id=\"content\" class=\"facts-container\">\r\n\r\n  <img id=\"header-image\" src=\"https://s27.postimg.org/havryjff7/HEADER_BACKGORUND.png\"/>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ },
 /* 735 */
@@ -65736,7 +65736,7 @@ module.exports = "<h1>...you can share your knowledge with the world!</h1>\r\n<d
 /* 741 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"fact\">\r\n  <h2 class=\"clickable\" (click)=\"goToDetail(id)\">{{title}}</h2>\r\n  <img class=\"fact-image-small\" [src]='img' (error)='standby($event)'>\r\n  <div class=\"fact-info\">\r\n    <div class=\"social-share-buttons\">\r\n      <share-buttons [shareTitle]=\"'Share with friends'\"\r\n                     [url]=\"'http://localhost:1337/facts/fact/' + id\"\r\n                     [count]=\"false\"\r\n                     [totalCount]=\"false\"\r\n                     [pinterest]=\"false\"\r\n                     [linkedIn]=\"false\"\r\n                     [google]=\"false\"\r\n                     [tumblr]=\"false\"\r\n                     [reddit]=\"false\"\r\n                     [stumbleUpOn]=\"false\"\r\n      ></share-buttons>\r\n    </div>\r\n    <div class=\"info-icons\">\r\n      <div>\r\n        <span> {{uploader}}</span><span class=\"glyphicon glyphicon-user\"></span>\r\n      </div>\r\n      <div>\r\n        <span> {{commentsCount}}</span> <span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\"></span>\r\n      </div>\r\n      <div>\r\n        <span> {{category}}</span><span class=\"glyphicon glyphicon-tag\"></span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"fact\">\r\n  <h2 class=\"clickable\" (click)=\"goToDetail(id)\">{{title}}</h2>\r\n  <img class=\"fact-image-small\" [src]='img' (error)='standby($event)'>\r\n  <div class=\"fact-info\">\r\n    <div class=\"social-share-buttons\">\r\n      <share-buttons [shareTitle]=\"'Share with friends'\"\r\n                     [url]=\"'https://fun-fact.herokuapp.com/facts/fact/' + id\"\r\n                     [count]=\"false\"\r\n                     [totalCount]=\"false\"\r\n                     [pinterest]=\"false\"\r\n                     [linkedIn]=\"false\"\r\n                     [google]=\"false\"\r\n                     [tumblr]=\"false\"\r\n                     [reddit]=\"false\"\r\n                     [stumbleUpOn]=\"false\"\r\n      ></share-buttons>\r\n    </div>\r\n    <div class=\"info-icons\">\r\n      <div>\r\n        <span> {{uploader}}</span><span class=\"glyphicon glyphicon-user\"></span>\r\n      </div>\r\n      <div>\r\n        <span> {{commentsCount}}</span> <span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\"></span>\r\n      </div>\r\n      <div>\r\n        <span> {{category}}</span><span class=\"glyphicon glyphicon-tag\"></span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ },
 /* 742 */

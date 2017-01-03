@@ -1,6 +1,6 @@
 {
   "/": {
-    "target": "http://localhost:1337/",
+    "target": "https://fun-fact.herokuapp.com/",
     "secure": false
   }
 }
