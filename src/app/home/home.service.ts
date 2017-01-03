@@ -13,7 +13,7 @@ export class HomeComponentService {
   }
 
   getHome(): Observable<any> {
-    return this._http.get(HomeUrl + '/home')
+    return this._http.get(HomeUrl + 'home')
       .map((res: Response) => {
         let body = res.json();
         return { status: res.status, body: body }
