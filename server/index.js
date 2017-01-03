@@ -6,7 +6,7 @@ const app = express();
 const stage = process.env.NODE_ENV || 'development';
 const config = require('./config/config')[stage];
 const passport = require('passport');
-
+const database = require('./config/database')(config);
 const data = require('./data')();
 const cors = require('cors');
 const auth = require('./config/auth');

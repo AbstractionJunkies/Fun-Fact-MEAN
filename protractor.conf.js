@@ -13,7 +13,7 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'https://fun-fact.herokuapp.com/',
+  baseUrl: 'http://localhost:1337/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

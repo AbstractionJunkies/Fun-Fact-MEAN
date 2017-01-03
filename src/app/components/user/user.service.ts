@@ -9,7 +9,7 @@ import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class UserService {
 
-    private host: string = 'https://fun-fact.herokuapp.com/';
+    private host: string = 'http://localhost:1337/';
     private avatarSubject: Subject<any>;
 
     constructor(

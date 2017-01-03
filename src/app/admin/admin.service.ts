@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs';
 import { AuthenticationService } from "../authentication/authentication.service";
 
-const HomeUrl = 'https://fun-fact.herokuapp.com/';
+const HomeUrl = 'http://localhost:1337/';
 
 @Injectable()
 export class AdminService {
