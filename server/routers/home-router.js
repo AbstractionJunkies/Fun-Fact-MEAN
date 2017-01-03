@@ -8,5 +8,5 @@ module.exports = function ({app, controllers}) {
     router
         .get('/', home.getHome);
 
-    app.use('/home', router);
+    app.use(router);
 };
