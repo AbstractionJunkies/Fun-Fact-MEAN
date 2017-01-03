@@ -6,7 +6,7 @@ module.exports = function ({app, controllers}) {
     const home = controllers.home;
 
     router
-        .get('/', home.getHome);
+        .get('/random-fact', home.getHome);
 
-    app.use(router);
+    app.use('/home', router);
 };
