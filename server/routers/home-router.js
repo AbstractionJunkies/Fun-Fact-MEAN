@@ -6,7 +6,7 @@ module.exports = function ({app, controllers}) {
     const home = controllers.home;
 
     router
-        .get('/home', home.getHome);
+        .get('/', home.getHome);
 
     app.use(router);
 };
