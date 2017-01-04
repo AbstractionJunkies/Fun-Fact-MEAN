@@ -1,6 +1,9 @@
-# "Fun Fact" - Teamwork project for TelerikAcademy season 2016, course Angular 2
+# "Fun Fact"* - Teamwork project for TelerikAcademy season 2016, course Angular 2
 
 ## Web application for sharing interesting facts
+  [Hosted on heroku -->click](https://fun-fact.herokuapp.com/)
+
+  [Video demo](https://www.youtube.com/watch?v=i5u_U2N4Q64)
 
 ### Functionality
 - All users can view the facts and its details(rating, comments)
@@ -29,7 +32,7 @@
 | Stoyan Ruzmanov | stoyan.ruzmanov | RuzmanovDev |
 | Kiril Peyanski  | kikopeyanski    | Ayyavazhi   |
 
-
+# *This is merged repo from [FunFactApi](https://github.com/AbstractionJunkies/FunFactAPI) and [FunFact](https://github.com/AbstractionJunkies/FunFact) in order to deploy it in heroku :)
 
 
 # Course Project Requirements
