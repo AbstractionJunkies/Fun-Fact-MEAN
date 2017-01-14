@@ -24,7 +24,7 @@
 - NodeJs(Express) for the back-end
 - MongoDb
 
-## Developer by AbstractionJunkies
+## Developed by AbstractionJunkies
 ## Team members
 | Name | [Student system](https://telerikacademy.com) username | [Github](https://github.com) username|
 |:----|:-----------------------|:-----------------------------|
