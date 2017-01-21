@@ -10,8 +10,8 @@
 - Search and filter
 - "Did you know..?" pool
 - Registered users can add facts, rate and/or comment them
-- Each registered user has a list of his favorite facts
-- Each registered user can change its email and/or password
+- Each registered user has a list of his/hers favorite facts
+- Each registered user can change his/hers email and/or password
 - Each registered  user can upload avatar picture
 - Admins can make regular users admins 
 - Admins can delete facts
